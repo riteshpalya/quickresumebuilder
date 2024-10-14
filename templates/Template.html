@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: Arial, "helvetica", Helvetica, sans-serif;
+        }
+        
+        body {
+            background: #fcfcfc;
+        }
+        
+        #main {
+            text-align: center;
+            width: 100%;
+            padding: 80px;
+        }
+        
+        #image .imgthumb {
+            width: 400px;
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+            padding: 13px;
+        }
+        
+        #image .imgthumb img {
+            width: 100%;
+            border: 8px solid#fff;
+            box-shadow: 0 0 5px 1px #555;
+            border-radius: 5px;
+        }
+        
+        #image .imgthumb:hover img {
+            /* filter: grayscale(100%);
+            -webkit-filter: grayscale(100%); */
+            transition: filter 0.5s ease-in-out;
+        }
+        
+        #image .imgthumb span {
+            display: none;
+            position: absolute;
+            bottom: 122px;
+            left: 89px;
+        }
+        
+        #image .imgthumb:hover span {
+            display: block;
+        }
+        
+        #image .imgthumb span input[type="button"] {
+            width: 225px;
+            height: 60px;
+            background: #ec3131;
+            border-radius: 50px;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+        
+        @media only screen and (max-width:700px) {
+            body {
+                margin-left: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <label class="logo"><img src="{{ url_for('static', filename='images/logo1.png') }}" class="logo" style="margin-left: 138px;" height="89px" width="115px"></label>
+
+    <div class="header">
+        <div class="head">
+            <p style="margin-top: 36px; margin-left: 550px; font-size: 60px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(37, 36, 36); ">
+                Resume Templates</p>
+            <hr size="2px" color="grey" width="35%" style="margin-left: 520px; ">
+        </div>
+        <br>
+        <br>
+        <p class="text-center" style="margin-left: 100px;  font-size: 27px; text-align: center;font-style: normal; color: rgb(109, 103, 103);">
+            Pick a resume template,fill it out, and format.create a <span style="color: rgb(53, 33, 33); font-weight: bold;">professional resume <br>in few clicks.
+            </span>just choose one of templates below,add content,<br> and download.</p>
+    </div>
+
+    <div id="main">
+        <div id="image">
+            <p class="imgthumb">
+                <img src="{{ url_for('static', filename='images/res3.jpeg') }}" width="30px" height="480px">
+                <a href="{{ url_for('resume3') }}"><span><input type="button" value="use this template"></span></a>
+                <p1 style="font-size: 30px; text-align: left; text-decoration: solid;"></p1><br>
+                <p2 style="font-size: 20px; color: rgb(122, 115, 115);">Professional resume template.
+                    <br>Plenty of information, no clutter.</p2>
+            </p>
+            <p class="imgthumb">
+                <img src="{{ url_for('static', filename='images/res2.jpeg') }}" width="30px" height="480px">
+                <a href="{{ url_for('resume2') }}"><span><input type="button" value="use this template"></span></a>
+                <p1 style="font-size: 30px; text-align: left; text-decoration: solid;"></p1><br>
+                <p2 style="font-size: 20px; color: rgb(122, 115, 115);">Professional resume template.
+                    <br>Plenty of information, no clutter.</p2>
+            </p>
+            <p class="imgthumb">
+                <img src="{{ url_for('static', filename='images/res12.jpeg') }}" width="30px" height="480px">
+                <a href="{{ url_for('resume12') }}"><span><input type="button" value="use this template"></span></a>
+                <p1 style="font-size: 30px; text-align: left; text-decoration: solid;"></p1><br>
+                <p2 style="font-size: 20px; color: rgb(122, 115, 115);">Professional resume template.
+                    <br>Plenty of information, no clutter.</p2>
+            </p>
+            <br>
+            <br>
+            <p class="imgthumb">
+                <img src="{{ url_for('static', filename='images/res4.jpeg') }}" width="30px" height="480px">
+                <a href="{{ url_for('resume4') }}"><span><input type="button" value="use this template"></span></a>
+                <p1 style="font-size: 30px; text-align: left; text-decoration: solid;"></p1><br>
+                <p2 style="font-size: 20px; color: rgb(122, 115, 115);">Professional resume template.
+                    <br>Plenty of information, no clutter.</p2>
+            </p>
+            <p class="imgthumb">
+                <img src="{{ url_for('static', filename='images/res5.jpeg') }}" width="30px" height="480px">
+                <a href="{{ url_for('resume5') }}"><span><input type="button" value="use this template"></span></a>
+                <p1 style="font-size: 30px; text-align: left; text-decoration: solid;"></p1><br>
+                <p2 style="font-size: 20px; color: rgb(122, 115, 115);">Professional resume template.
+                    <br>Plenty of information, no clutter.</p2>
+            </p>
+            <p class="imgthumb">
+                <img src="{{ url_for('static', filename='images/res9.jpeg') }}" width="30px" height="480px">
+                <a href="{{ url_for('resume9') }}"><span><input type="button" value="use this template"></span></a>
+                <p1 style="font-size: 30px; text-align: left; text-decoration: solid;"></p1><br>
+                <p2 style="font-size: 20px; color: rgb(122, 115, 115);">Professional resume template.
+                    <br>Plenty of information, no clutter.</p2>
+            </p>
+            <br>
+            <br>
+            <p class="imgthumb">
+                <img src="{{ url_for('static', filename='images/res8.jpeg') }}" width="30px" height="480px">
+                <a href="{{ url_for('resume8') }}"><span><input type="button" value="use this template"></span></a>
+                <p1 style="font-size: 30px; text-align: left; text-decoration: solid;"></p1><br>
+                <p2 style="font-size: 20px; color: rgb(122, 115, 115);">Professional resume template.
+                    <br>Plenty of information, no clutter.</p2>
+            </p>
+            <p class="imgthumb">
+                <img src="{{ url_for('static', filename='images/res10.jpeg') }}" width="30px" height="480px">
+                <a href="{{ url_for('resume10') }}"><span><input type="button" value="use this template"></span></a>
+                <p1 style="font-size: 30px; text-align: left; text-decoration: solid;"></p1><br>
+                <p2 style="font-size: 20px; color: rgb(122, 115, 115);">Professional resume template.
+                    <br>Plenty of information, no clutter.</p2>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+.container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+P {
+    font-family: "Gill Sans MT";
+    font-size: 50px;
+    text-align: center;
+    font-style: 'bold';
+}
+
+.box1 {
+    position: relative;
+    height: 80px;
+    padding-left: 250px;
+}
+
+.box1 img {
+    height: 150px;
+}
+
+h1 {
+    font-family: "Gill Sans MT";
+    font-size: 25px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.box2 {
+    position: relative;
+    height: 80px;
+    padding-left: 130px;
+}
+
+.box2 img {
+    height: 150px;
+}
+
+h2 {
+    font-family: "Gill Sans MT";
+    font-size: 25px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.box3 {
+    position: relative;
+    height: 80px;
+    padding-right: 30px;
+}
+
+.box3 img {
+    height: 150px;
+}
+
+h3 {
+    font-family: "Gill Sans MT";
+    font-size: 25px;
+    margin-right: 130px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background: darkorange;
+    border-radius: 6px;
+    padding: 10px 40px;
+    mrgin-bottom: 1000px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 9px 10px #333;
+    position: relative;
+    bottom: -190px;
+    left: 530px;
+    font-family: "Gill Sans MT";
+    font-size: 20px;
+}
+
+a:hover {
+    background: #4682B4;
+    transition: .5s;
+}
+
+@media only screen and (max-width:700px) {
+    .btn {
+        margin-left: -400px;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How it works</title>
+    <style>
+        img[alt="www.000webhost.com"] {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/step.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="heding-section">
+                <h1 style="text-align: center; margin-top: 20px; font-weight: bolder;"> Just three simple steps</h1>
+            </div>
+            <div class=" content-section ">
+                <div class="card " style="margin-bottom: 80px;">
+                    <img src="{{ url_for('static', filename='images/step1.png') }}">
+                    <h1>Pick a template </h1>
+                </div>
+                <div class="card " style="margin-bottom: 80px;">
+                    <img src="{{ url_for('static', filename='images/step2.png') }}">
+                    <h1>Customize your resume</h1>
+                </div>
+                <div class="card " style="margin-bottom: 80px;">
+                    <img src="{{ url_for('static', filename='images/step3.png') }}">
+                    <h1>Hit 'Download'</h1>
+                </div>
+            </div>
+        </div>
+        <a href="{{ url_for('template') }}" class="btn">BUILD MY RESUME</a>
+    </div>
+</body>
+
+</html>
